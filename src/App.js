@@ -10,6 +10,9 @@ import Trips from './components/views/Trips/TripsContainer';
 // TODO - import other views
 import Info from './components/views/Info/Info';
 import NotFound from './components/views/NotFound/NotFound';
+import Regions from './components/views/Regions/Regions';
+import Trips from './components/views/Trips/Trips';
+import Trip from './components/views/Trip/Trip';
 
 import parseTrips from './utils/parseTrips';
 import {setMultipleStates} from './redux/globalRedux';
@@ -42,6 +45,9 @@ class App extends React.Component {
             <Route exact path='/trips' component={Trips} />
             {/* TODO - add more routes for other views */}
             <Route exact path='/info' component={Info} />
+            <Route exact path='/Regions' component={Regions}/>
+            <Route exact path='/Trip' component={Trip}/>
+            <Route exact path='/Trips' component={Trips}/>
             <Route path='*' component={NotFound} />
           </Switch>
         </MainLayout>
